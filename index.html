@@ -1,34 +1,102 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WAD CS-324</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAD CS-324</title>
 
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-            body {
-                font-family: sans-serif;
-                background-color: #000;
-                color: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-            }
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-            h1 {
-                font-size: 5rem;
-                font-weight: 900;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>WAD CS-324</h1>
-    </body>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #19191a;
+        color: #fff;
+      }
+
+      .main {
+        padding: 1.5rem;
+      }
+
+      .main-heading {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 0.7rem;
+
+        @media only screen and (min-width: 1080px) {
+          font-size: 3rem;
+        }
+      }
+
+      .main-intro {
+        color: #a4a4a4;
+      }
+
+      .assignments {
+        margin-top: 3rem;
+      }
+
+      .assignments h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .assignments ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        list-style: none;
+
+        @media only screen and (min-width: 1080px) {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      .assignment-item a {
+        display: block;
+        border: 1px dashed #5d5d5d;
+        padding: 1rem;
+        opacity: 0.8;
+        font-size: 0.95rem;
+        text-decoration: none;
+        color: inherit;
+        transition: background-color 0.2s ease-out;
+
+        &:hover {
+          background-color: #5d5d5d;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main">
+      <div>
+        <h1 class="main-heading">WAD CS-324</h1>
+        <p class="main-intro">Fall 2026 Web Application Development Course</p>
+      </div>
+
+      <section class="assignments">
+        <h2>Assignments</h2>
+
+        <ul>
+          <li class="assignment-item">
+            <a href="assignments/02/index.html">Assignment 2</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
