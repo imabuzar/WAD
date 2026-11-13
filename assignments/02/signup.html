@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up - formbuilder</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div class="logo">
+          <a href="">formbuilder</a>
+        </div>
+        <div class="content">
+          <h1>Sign up</h1>
+          <p>You are just one step away</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="back-link">
+          <a href="index.html">Back to home</a>
+        </div>
+
+        <div class="content-wrapper">
+          <div class="head">
+            <h1>Get started</h1>
+            <p>Create a new account</p>
+          </div>
+
+          <form action="" method="post">
+            <div class="item">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="item">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="•••••••••••"
+                required
+              />
+            </div>
+            <div class="item">
+              <label for="repeat-password">Confirm password</label>
+              <input
+                type="password"
+                name="repeat-password"
+                id="repeat-password"
+                placeholder="•••••••••••"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg"
+              id="signup-btn"
+            >
+              Sign up
+            </button>
+          </form>
+
+          <div class="signin-text">
+            <p>Already have an account?</p>
+            <a href="signin.html">Sign in</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

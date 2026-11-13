@@ -1,0 +1,141 @@
+.main-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-header-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 60px;
+  padding: 0.5rem var(--spacing-body-x);
+}
+
+.main-header-logo {
+  justify-self: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: default;
+  color: var(--color-text);
+}
+
+.menu-toggle {
+  justify-self: start;
+}
+
+#menu-toggle-input {
+  display: none;
+}
+
+#menu-toggle-input:checked + .menu-toggle-icon .menu-open-icon {
+  display: none;
+}
+
+#menu-toggle-input:not(:checked) + .menu-toggle-icon .menu-close-icon {
+  display: none;
+}
+
+.main-header-wrapper > .main-header-mobile-actions {
+  justify-self: end;
+}
+
+/* Navigation Menu */
+.main-header-menu {
+  position: fixed;
+  top: 61px;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: calc(100dvh - 60px);
+  padding: 2rem;
+  background-color: var(--color-bg);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.main-header:has(#menu-toggle-input:checked) .main-header-menu {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.main-header-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.main-header-link-item {
+  list-style: none;
+}
+
+.main-header-link-item a {
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.25s ease-out;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.main-header-menu .main-header-mobile-actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.main-header-desktop-actions {
+  display: none;
+}
+
+@media only screen and (min-width: 1080px) {
+  .main-header-wrapper {
+    max-width: var(--deskop-max-width);
+    margin: auto;
+    grid-template-columns: auto auto;
+  }
+
+  .main-header .menu-toggle,
+  .main-header .main-header-mobile-actions {
+    display: none;
+  }
+
+  .main-header-logo {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .main-header-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 0;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .main-header-links {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .main-header-link-item a {
+    font-size: 0.9rem;
+  }
+
+  .main-header-desktop-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

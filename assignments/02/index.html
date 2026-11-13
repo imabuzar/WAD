@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formbuilder</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header-wrapper">
+        <div class="menu-toggle">
+          <input type="checkbox" id="menu-toggle-input" />
+          <label for="menu-toggle-input" class="menu-toggle-icon">
+            <img
+              src="assets/icons/menu.svg"
+              alt="Menu Open Icon"
+              class="menu-open-icon"
+              width="20"
+              height="20"
+            />
+            <img
+              src="assets/icons/x.svg"
+              alt="Menu Close Icon"
+              class="menu-close-icon"
+              width="20"
+              height="20"
+            />
+          </label>
+        </div>
+        <div class="main-header-logo">formbuilder</div>
+        <div class="main-header-mobile-actions">
+          <a href="signin.html" class="btn btn-flat">Sign in</a>
+        </div>
+
+        <div class="main-header-menu">
+          <nav class="main-header-nav">
+            <ul class="main-header-links">
+              <li class="main-header-link-item">
+                <a href="">Home</a>
+              </li>
+              <li class="main-header-link-item">
+                <a href="">About</a>
+              </li>
+              <li class="main-header-link-item">
+                <a href="">Products</a>
+              </li>
+              <li class="main-header-link-item">
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-header-mobile-actions">
+            <a href="signup.html" class="btn btn-primary btn-lg">Sign up</a>
+          </div>
+          <div class="main-header-desktop-actions">
+            <a href="signin.html" class="btn btn-flat">Sign in</a>
+            <a href="signup.html" class="btn btn-primary">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="badge"><span>No credit card required</span></div>
+        <h1>
+          Build forms and intelligent data collection workflows with natural
+          language
+        </h1>
+        <p>
+          Create professional forms without unnecessary complexity. Collect
+          accurate information, organize responses, and build intelligent
+          workflows that adapt to your needs. Whether you are gathering
+          feedback, managing applications, or simplifying internal processes,
+          formbuilder helps you turn ideas into efficient data collection
+          experiences.
+        </p>
+
+        <div class="hero-btns">
+          <a href="signup.html" class="btn btn-primary btn-lg"
+            >Create with AI</a
+          >
+          <button class="btn btn-flat btn-lg">Explore Library</button>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features-header">
+          <p class="muted-p">Everything in one place</p>
+          <h2>Build better workflows with less effort</h2>
+          <p>
+            From the first question to the final response, formbuilder helps you
+            collect and manage information with clarity.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <span class="feature-number">01</span>
+            <h3>Build with natural language</h3>
+            <p>
+              Describe what you need and create a polished form without starting
+              from scratch.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">02</span>
+            <h3>Keep responses organized</h3>
+            <p>
+              Collect accurate information in one place and turn submissions
+              into useful data.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-number">03</span>
+            <h3>Adapt as you grow</h3>
+            <p>
+              Create workflows that are flexible enough to support changing
+              business needs.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="bottom-signup">
+        <div class="wrapper">
+          <p class="muted-p">It just takes 60 seconds</p>
+          <h2>Stop building forms manually. Start building workflows.</h2>
+          <p class="desc-p">
+            Join now and try out what you have been missing, from traditional
+            froms creation to automated AI form builder.
+          </p>
+
+          <div class="input-container">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your work email"
+            />
+            <button class="btn btn-primary">Start Now</button>
+          </div>
+
+          <div class="badges-container">
+            <div>
+              <img
+                src="assets/icons/badge-check.svg"
+                alt="Check Icon"
+                width="20"
+              />
+              <span>No credit card required</span>
+            </div>
+
+            <div>
+              <img src="assets/icons/clock.svg" alt="Clock Icon" width="20" />
+              <span>Full free life time</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-main">
+        <div class="site-footer-about">
+          <p><strong>formbuilder</strong></p>
+          <p>
+            Next-generation AI data collection and adaptive workflow<br />
+            automation for technical teams.
+          </p>
+        </div>
+
+        <div class="site-footer-column">
+          <h3>Product</h3>
+          <a href="#">AI Form Builder</a>
+          <a href="#">Workflow</a>
+          <a href="#">Schema Generator</a>
+          <a href="#">Changelog</a>
+        </div>
+
+        <div class="site-footer-column">
+          <h3>Resources</h3>
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">Form Templates</a>
+          <a href="#">System Status</a>
+        </div>
+
+        <div class="site-footer-column">
+          <h3>Company</h3>
+          <a href="#">About Us</a>
+          <a href="#">Customers</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="site-footer-bottom">
+        <p>● All systems operational</p>
+        <div>
+          <span>&copy; 2026 formbuilder, Inc. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

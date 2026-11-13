@@ -1,0 +1,144 @@
+main {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+}
+
+.left {
+  display: none;
+}
+
+.right {
+  width: 100%;
+  padding: 2rem;
+}
+
+.right .back-link a {
+  color: #000;
+  font-size: 0.8rem;
+}
+
+.right .head {
+  margin-top: 1.5rem;
+}
+
+.right .head h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.right .head p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+form .item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form .item label {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+form .item input {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.signin-text {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.signin-text p {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 600px) {
+  .right {
+    width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .right {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 50%;
+  }
+
+  .right .content-wrapper {
+    align-self: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    color: #fff;
+    background: linear-gradient(to right, #06708d, #14aacc);
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .left .logo a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .left .content {
+    width: 100%;
+    margin-left: auto;
+    font-style: italic;
+  }
+
+  .left .content h1 {
+    font-size: 7rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .left .content p {
+    width: 80%;
+    font-size: 3rem;
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .right .content-wrapper {
+    width: 60%;
+  }
+
+  .left .content {
+    width: 80%;
+  }
+}
